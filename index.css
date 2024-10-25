@@ -1,0 +1,83 @@
+@media only screen and (max-width: 768px) {
+  body {
+      background-color: white;
+
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0.1;
+  left: 1;
+}
+
+.hamburger-menu .line {
+  display: block;
+  width: 30px;
+  height: 7px;
+  background-color: #272a31; 
+  margin: 3px 0;
+}
+
+.hamburger-menu:hover .line {
+  background-color: #555;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+  /*write styles for introduction section such that parent container is flexbox and children and arranged column wise also adjust size of each element according to media query of max width 768px */
+ /* Styles for the introduction section for devices with max width of 768px */
+
+  .introduction-section {
+      display: flex;
+      flex-direction: column;
+      padding: 20px; /* Add padding for spacing */
+      background-color: #fff; /* Background color for the section */
+      border-radius: 8px; /* Rounded corners for the section */
+      margin: 30px; /* Margin around the section */
+      margin-top: 10px;
+  }
+
+  .sharing-world {
+      font-size: 1.5em; /* Smaller size for h2 */
+      margin-bottom: 10px; /* Space below the heading */
+  }
+
+  .global-summit {
+      font-size: 2em; /* Adjusted size for h1 */
+      margin-bottom: 15px; /* Space below the heading */
+  }
+
+  .intro-description {
+      margin: 0 auto; /* Center the intro description */
+      max-width: 90%; /* Limit the width for readability */
+  }
+
+  .intro-text {
+      font-size: 1em; /* Adjusted size for paragraph text */
+      line-height: 1.5; /* Improve readability */
+      margin-bottom: 15px; /* Space below the paragraph */
+  }
+
+  .date-text {
+      font-size: 1.2em; /* Smaller size for date text */
+      margin: 5px 0; /* Space around the date text */
+  }
+
+  .location-text {
+      font-size: 1em; 
+      margin: 5px 0; 
+  }
+}
+}
