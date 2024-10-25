@@ -1,0 +1,90 @@
+@media only screen and (max-width: 768px) {
+  body {
+      background-color: white;
+
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0.1;
+  left: 1;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.hamburger-menu .line {
+  display: block;
+  width: 30px;
+  height: 7px;
+  background-color: #272a31; 
+  margin: 3px 0;
+}
+
+.hamburger-menu:hover .line {
+  background-color: #555;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburger-menu.active .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+ .introduction-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; 
+  background-color: #fff; 
+  border-radius: 8px; 
+  margin: 30px; /* Margin around the section */
+  margin-top: 10px;
+  /* Create a linear gradient code with color property set to linear gradient ith #EC5242 */
+  color: linear-gradient(90deg, #EC5242, #F4A261);
+}
+
+.sharing-world {
+  margin-top: 60px;
+  font-size: 1.5em; /* Smaller size for h2 */
+  color: #ec5242;
+  margin-bottom: -10px;
+}
+
+.global-summit {
+  font-size: 2em; /* Adjusted size for h1 */
+  margin-bottom: 15px; /* Space below the heading */
+  background: linear-gradient(to right, #ec5242, #b54311); /* Gradient from #ec5242 to another color */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent */
+}
+
+.intro-description {
+  margin: 0 auto; /* Center the intro description */
+  max-width: 90%; /* Limit the width for readability */
+}
+
+.intro-text {
+  font-size: 1em; /* Adjusted size for paragraph text */
+  line-height: 1.5; /* Improve readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.date-text {
+  font-size: 1.2em; /* Smaller size for date text */
+  margin: 5px 0; /* Space around the date text */
+}
+
+.location-text {
+  font-size: 1em; 
+  margin: 5px 0; 
+}
+ 
+}
+}
