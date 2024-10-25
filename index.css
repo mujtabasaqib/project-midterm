@@ -1,6 +1,10 @@
+
+
 @media only screen and (max-width: 768px) {
   body {
       background-color: white;
+      font-family: "Lato", sans-serif;
+  }
 
 .hamburger-menu {
   display: inline-block;
@@ -8,9 +12,8 @@
   background: none;
   border: none;
   position: absolute;
-  top: 0.1;
-  left: 1;
-  margin-left: 50px;
+  top: 25px;
+  left: 15px;
   margin-bottom: 30px;
 }
 
@@ -20,10 +23,6 @@
   height: 7px;
   background-color: #272a31; 
   margin: 3px 0;
-}
-
-.hamburger-menu:hover .line {
-  background-color: #555;
 }
 
 .hamburger-menu.active .line:nth-child(1) {
@@ -41,50 +40,274 @@
  .introduction-section {
   display: flex;
   flex-direction: column;
-  padding: 20px; 
   background-color: #fff; 
-  border-radius: 8px; 
-  margin: 30px; /* Margin around the section */
-  margin-top: 10px;
-  /* Create a linear gradient code with color property set to linear gradient ith #EC5242 */
+  border-radius: 8px;  
+  margin-top: 20px;
   color: linear-gradient(90deg, #EC5242, #F4A261);
+  background-image: url('imgs/intro-bg.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 10px;
 }
 
 .sharing-world {
   margin-top: 60px;
-  font-size: 1.5em; /* Smaller size for h2 */
+  font-size: 1.5em; 
   color: #ec5242;
-  margin-bottom: -10px;
+  margin-bottom: -35px;
+  font-weight: 350;
 }
 
 .global-summit {
-  font-size: 2em; /* Adjusted size for h1 */
-  margin-bottom: 15px; /* Space below the heading */
-  background: linear-gradient(to right, #ec5242, #b54311); /* Gradient from #ec5242 to another color */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make text color transparent */
+  font-size: 2em; 
+  margin-bottom: 15px; 
+  background: linear-gradient(to right, #ec5242, #792501); 
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
 }
 
 .intro-description {
-  margin: 0 auto; /* Center the intro description */
-  max-width: 90%; /* Limit the width for readability */
+  margin: 0 auto;
+  max-width: 90%; 
+  border: 5px solid white;
+  padding: 5px;
+  font-weight: 350;
+  background-color: #ebebeb;
 }
 
 .intro-text {
-  font-size: 1em; /* Adjusted size for paragraph text */
-  line-height: 1.5; /* Improve readability */
-  margin-bottom: 15px; /* Space below the paragraph */
+  font-size: 1em; 
+  line-height: 1.5; 
+  margin-bottom: 15px; 
 }
 
 .date-text {
-  font-size: 1.2em; /* Smaller size for date text */
-  margin: 5px 0; /* Space around the date text */
+  font-size: 1.2em; 
+  margin: 5px 0; 
+  color: #565657;
+  font-weight: 750;
 }
 
 .location-text {
   font-size: 1em; 
   margin: 5px 0; 
+  font-family: #d3d3d3;
+  font-weight: 400;
 }
- 
+
+.main-program-section {
+  background-color: #272a31;
+  color: white;
+  background-image: url('imgs/bg-2.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
+
+.main-program-heading {
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+}
+
+.main-program-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 1.5px;
+  background-color: #ec5242;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.main-program-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.main-program-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  margin: 0 auto; 
+  padding: 40px;
+  gap: 10px;
+}
+
+.main-program-child-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(75, 75, 75, 0.7);
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.main-program-text {
+  color: #ec5242;
+  font-size: 0.75em;
+  width: 35px;
+  margin-right: 15px;
+}
+
+.main-program-para {
+  line-height: 20px;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+.main-program-button {
+  background-color: #ec5242;
+  color: white;
+  border: none;
+  padding: 20px 20px;
+  font-size: 0.75em;
+}
+
+.featured-speakers-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.featured-speakers-header {
+  font-weight: 450;
+  position: relative;
+}
+
+.featured-speakers-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 1.5px;
+  background-color: #ec5242;
+}
+
+.speaker-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-name {
+  font-size: 1.5em;
+}
+
+.speaker-title {
+  margin-top: -10px;
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: 400;
+  color: #ec5242;
+}
+
+.speaker-title::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #d3d3d3;
+  margin-top: 10px;
+}
+
+.speaker-description {
+  margin-top: -1px;
+}
+
+.speaker-image {
+  width: 80px;
+  height: 80px;
+}
+
+.more-button {
+  width: 95vw;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+}
+
+.more-button:hover {
+  background-color: #d3d3d3;
+}
+
+.caret-symbol {
+  color: #ec5242;
+}
+
+.partners {
+  background-color: #444444;
+}
+
+.partners-heading {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.partners-heading::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #ec5242;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.partners-icon {
+  width: 80vw;
+  height: 50px;
+  margin-left: 10%;
+  opacity: 0.33;
+  margin-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.creative {
+  height: 50px;
+  width: 130px;
+}
+
+.footer-para {
+  font-size: 0.75em;
+  font-weight: 450;
+}
+
 }
